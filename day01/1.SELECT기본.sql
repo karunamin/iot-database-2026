@@ -1,3 +1,4 @@
+-- Set as a Default와 동일 기능
 use madangdb;
 
 -- 한글이 나눔고딕으로 출력됨
@@ -19,4 +20,19 @@ SELECT NOW();
 
 -- 열 명시
 SELECT bookname, price
-   FROM Book;
+  FROM Book;
+
+-- 필터링
+SELECT * FROM Customer
+ WHERE custid > 1 AND custid < 5;
+
+-- 정렬
+SELECT * FROM Book;
+
+SELECT * FROM Book
+ ORDER BY bookid ASC; -- asc 생략가능
+
+SELECT * FROM Book
+ ORDER BY bookid DESC;
+
+
