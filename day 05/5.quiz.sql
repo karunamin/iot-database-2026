@@ -53,4 +53,3 @@ SELECT c.name, t.Total_price
   JOIN order_sum t
     ON c.custid = t.custid
  ORDER BY t.Total_price DESC;
-		 
